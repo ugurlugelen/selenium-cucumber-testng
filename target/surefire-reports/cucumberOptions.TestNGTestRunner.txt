@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: cucumberOptions.TestNGTestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.21 s <<< FAILURE! - in cucumberOptions.TestNGTestRunner
+runScenario(cucumberOptions.TestNGTestRunner)  Time elapsed: 33.512 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: h4.product-name
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'AU-MacBook-Air.local', ip: '192.168.1.39', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c7d75280-f0a8-4696-86a6-28dea425606b, findElement {using=css selector, value=h4.product-name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.1, moz:accessibilityChecks: false, moz:buildID: 20220729222726, moz:debuggerAddress: localhost:62174, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.5.0, moz:processID: 34417, moz:profile: /var/folders/zd/dqnl5w616n5..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62174/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c7d75280-f0a8-4696-86a6-28dea425606b
+
