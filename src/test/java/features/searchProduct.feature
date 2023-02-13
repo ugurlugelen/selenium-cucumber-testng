@@ -1,4 +1,5 @@
-  Feature: Search and Place the order of the products
+@smoke
+Feature: Search and Place the order of the products
 
     Scenario Outline: Search Experience for home and Offers Page
       Given User is on GreenCart Landing Page
