@@ -1,34 +1,12 @@
 name: Selenium Cucumber Tests
 
-on:
-  push:
-    branches: [ main ]
-
+on: workflow_dispatch
 jobs:
   run-tests:
-    runs-on: macOS-latest
+    runs-on: [self-hosted, adem-macos]
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up JDK
-        uses: actions/setup-java@v1
-        with:
-          java-version: 14
-
-      - name: Set up Maven
-        uses: actions/setup-maven@v1
-        with:
-          maven-version: 3.6.3
-
       - name: Run Selenium Cucumber tests
-        run: mvn test -Dbrowser=chrome
-
-      - name: Publish test results
-        uses: actions/upload-artifact@v1
-        with:
-          name: test-results
-          path: target/surefire-reports
+        run: mvn clean test
 
 
