@@ -6,6 +6,8 @@ jobs:
     runs-on: [self-hosted, adem-macos]
 
     steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v2
       - name: Run Selenium Cucumber tests
         run: mvn clean test
 
