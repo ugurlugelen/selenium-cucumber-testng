@@ -26,6 +26,6 @@ public class LandingPageStepDefinitions {
         landingPage.searchItem(string);
         Thread.sleep(1000);
         testContextSetUp.productNameAtMainPage = landingPage.getProductName().split("-")[0].trim();
-        System.out.println("Denemelerceeeee" + testContextSetUp.productNameAtMainPage);
+        //System.out.println("Denemelerceeeee" + testContextSetUp.productNameAtMainPage);
     }
 }

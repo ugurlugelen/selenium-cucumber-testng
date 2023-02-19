@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
 
-        features = "target/failed_scenarios.txt",
+        features = "@target/failed_scenarios.txt",
         glue = "stepDefinitions",
         monochrome = true,
         publish = true,

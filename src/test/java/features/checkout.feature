@@ -9,5 +9,5 @@ Feature: Place the order for product
     And verify user has ability to enter promo code and place the order
 
     Examples:
-      | productName |
-      | jfj          |
+      | productName|
+      | Cucumber   |
