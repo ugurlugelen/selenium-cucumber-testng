@@ -6,11 +6,13 @@ jobs:
     steps:
       - name: Checkout Git Repository
         uses: actions/checkout@v2
-      - name: Cache Dependencies
+      - name: Cache Local Maven Repository
         uses: actions/cache@v3
         with:
           path: ~/.m2/repository
-          key: framework-deps-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
       - name: Compile Maven Project
         run: mvn compile
       - name: Run Selenium Cucumber Tests
