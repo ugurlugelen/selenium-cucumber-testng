@@ -6,6 +6,11 @@ jobs:
     steps:
       - name: Checkout Git Repository
         uses: actions/checkout@v2
+      - name: Cache Dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: framework-deps-${{ hashFiles('**/pom.xml') }}
       - name: Run Selenium Cucumber Tests
         run: mvn clean test
       - name: Upload Target Folder
@@ -20,6 +25,6 @@ jobs:
           name: Test Results
           path: ${{ github.workspace }}/target/surefire-reports/TEST-cucumberOptions.TestNGTestRunner.xml
           reporter: java-junit
-          java-version: 11
+          #java-version: 11
 
 
