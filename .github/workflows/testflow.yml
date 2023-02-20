@@ -11,8 +11,10 @@ jobs:
         with:
           path: ~/.m2/repository
           key: framework-deps-${{ hashFiles('**/pom.xml') }}
+      - name: Compile Maven Project
+        run: mvn compile
       - name: Run Selenium Cucumber Tests
-        run: mvn clean test
+        run: mvn test
       - name: Upload Target Folder
         uses: actions/upload-artifact@v3
         with:
