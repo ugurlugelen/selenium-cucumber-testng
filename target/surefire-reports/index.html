@@ -130,30 +130,72 @@
                   </a> <!-- runScenario("", "Place the order for product") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("","Place the order for product")</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;h4.product-name&quot;}
-  (Session info: chrome=110.0.5481.77)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;Adems-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:bd:ca10:88f7:8eda%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;11.0.17&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a10ff7306e88af21cee1682e2725bb2a, findElement {using=css selector, value=h4.product-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/75/w5hx54p12yd...}, goog:chromeOptions: {debuggerAddress: localhost:49620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49620/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a10ff7306e88af21cee1682e2725bb2a
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+System info: host: &apos;Adems-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:89b:f0fe:313e:6ee0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at pages.LandingPage.getProductName(LandingPage.java:28)
-	at stepDefinitions.LandingPageStepDefinitions.user_searched_with_shortname_and_extracted_actual_name_of_the_product(LandingPageStepDefinitions.java:28)
-	at ✽.User searched with shortname &quot;jfj&quot; and extracted actual name of the product(file:///Users/m2macbookair/IdeaProjects/CucumberFramework/src/test/java/features/checkout.feature:6)
-... Removed 4 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:94)
+	at utils.TestBase.getDriver(TestBase.java:37)
+	at utils.TestContextSetUp.&lt;init&gt;(TestContextSetUp.java:17)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:49)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 13 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -224,12 +266,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'cucumberOptions.TestNGTestRunner')
-data.setCell(0, 3, 20028);
+data.setCell(0, 3, 6438);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -257,18 +299,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">cucumberOptions.TestNGTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@25c5e994)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@2b87581)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("", "Place the order for product")</span>
-                <span class="method-start">266 ms</span>
+                <span class="method-start">272 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">20298 ms</span>
+                <span class="method-start">6715 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

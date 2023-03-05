@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 13 18:02:48 TRT 2023</td>
+<td>Started on:</td><td>Sun Mar 05 23:22:58 TRT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21584 ms)</td>
+<tr><td>Total time:</td><td>53 seconds (53821 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,60 +77,9 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='cucumberOptions.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Place the order for product"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;h4.product-name&quot;}
-  (Session info: chrome=110.0.5481.77)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;Adems-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:bd:ca10:88f7:8eda%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;11.0.17&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a10ff7306e88af21cee1682e2725bb2a, findElement {using=css selector, value=h4.product-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/75/w5hx54p12yd...}, goog:chromeOptions: {debuggerAddress: localhost:49620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49620/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a10ff7306e88af21cee1682e2725bb2a
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at pages.LandingPage.getProductName(LandingPage.java:28)
-	at stepDefinitions.LandingPageStepDefinitions.user_searched_with_shortname_and_extracted_actual_name_of_the_product(LandingPageStepDefinitions.java:28)
-	at ✽.User searched with shortname &quot;jfj&quot; and extracted actual name of the product(file:///Users/m2macbookair/IdeaProjects/CucumberFramework/src/test/java/features/checkout.feature:6)
-... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace545192935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace545192935'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;h4.product-name&quot;}
-  (Session info: chrome=110.0.5481.77)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;Adems-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:bd:ca10:88f7:8eda%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;11.0.17&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a10ff7306e88af21cee1682e2725bb2a, findElement {using=css selector, value=h4.product-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/75/w5hx54p12yd...}, goog:chromeOptions: {debuggerAddress: localhost:49620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49620/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a10ff7306e88af21cee1682e2725bb2a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at pages.LandingPage.getProductName(LandingPage.java:28)
-	at stepDefinitions.LandingPageStepDefinitions.user_searched_with_shortname_and_extracted_actual_name_of_the_product(LandingPageStepDefinitions.java:28)
-	at ✽.User searched with shortname &quot;jfj&quot; and extracted actual name of the product(file:///Users/m2macbookair/IdeaProjects/CucumberFramework/src/test/java/features/checkout.feature:6)
-</pre></div></td>
-<td>20</td>
-<td>cucumberOptions.TestNGTestRunner@3541cb24</td></tr>
+<td></td>
+<td>51</td>
+<td>cucumberOptions.TestNGTestRunner@52102734</td></tr>
 </table><p>
 </body>
 </html>

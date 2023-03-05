@@ -2,6 +2,10 @@ name: Selenium Cucumber Tests
 on: workflow_dispatch
 jobs:
   run-tests:
+    build:
+      strategy:
+        matrix:
+          browser: [chrome,edge]
     runs-on: [self-hosted, adem-macos]
     steps:
       - name: Checkout Git Repository
@@ -10,7 +14,7 @@ jobs:
         run: mvn compile
       - name: Run Selenium Cucumber Tests
         id: run-tests
-        run: mvn test
+        run: mvn test -Dbrowser=${{ matrix.browser }}
       - name: Upload Target Folder
         uses: actions/upload-artifact@v3
         with:
