@@ -2,10 +2,9 @@ name: Selenium Cucumber Tests
 on: workflow_dispatch
 jobs:
   run-tests:
-    build:
-      strategy:
-        matrix:
-          browser: [chrome,edge]
+    strategy:
+      matrix:
+        browser: [chrome,edge]
     runs-on: [self-hosted, adem-macos]
     steps:
       - name: Checkout Git Repository
