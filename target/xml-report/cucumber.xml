@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="51.213">
-    <testcase classname="Place the order for product" name="_2" time="51.117">
-        <system-out>
-            <![CDATA[Given User is on GreenCart Landing Page.....................................passed
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="6.426" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Place the order for product" name=" - Example #1.1" time="6.321">
+<system-out><![CDATA[
+Given User is on GreenCart Landing Page.....................................passed
 When User searched with shortname "Cucumber" and extracted actual name of the product.passed
 And Added "3" items of the selected product to cart.........................passed
 Then User proceeds to checkout and validate the "Cucumber" items in checkout page.passed
 And verify user has ability to enter promo code and place the order.........passed
-]]>
-        </system-out>
-    </testcase>
+]]></system-out>
+</testcase>
 </testsuite>
