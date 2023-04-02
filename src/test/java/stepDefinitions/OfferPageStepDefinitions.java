@@ -34,7 +34,7 @@ public class OfferPageStepDefinitions {
         if (!testContextSetUp.driver.getCurrentUrl().equals("https://rahulshettyacademy.com/seleniumPractise/#/offers")){
             LandingPage landingPage = testContextSetUp.pageObjectManager.getLandingPage();
             landingPage.clickTopDealsButton();
-            testContextSetUp.utils.swithWindowToChild();
+            testContextSetUp.utils.switchWindowToChild();
             testContextSetUp.utils.waitUntilNewWindows(2);
         }else {
             System.out.println("Already switched");

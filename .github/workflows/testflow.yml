@@ -12,7 +12,7 @@ jobs:
       - name: Compile Maven Project
         run: mvn compile
       - name: Run Selenium Cucumber Tests
-        id: run-tests
+        id: run-mvn-tests
         run: mvn test -Dbrowser=${{ matrix.browser }}
       - name: Upload Target Folder
         uses: actions/upload-artifact@v3
@@ -20,7 +20,7 @@ jobs:
           name: target
           path: ${{ github.workspace }}/target
       - name: Test Report
-        if: failure() && steps.run-tests.outcome == 'failure'
+        if: failure() && steps.run-mvn-tests.outcome == 'failure'
         uses: dorny/test-reporter@v1
         with:
           name: Test Results
