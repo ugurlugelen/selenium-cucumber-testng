@@ -3,8 +3,8 @@ updates:
   - package-ecosystem: maven
     directory: "/"
     schedule:
-      interval: "daily"
-      time: "12:50"
+      interval: daily
+      time: "12:56"
     open-pull-requests-limit: 10
     commit-message:
       prefix: "mvn"
