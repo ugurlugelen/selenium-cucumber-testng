@@ -1,7 +1,9 @@
 name: Selenium Cucumber Tests
 on:
-
-  workflow_dispatch
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 jobs:
   run-tests:
     strategy:
