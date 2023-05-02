@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="6.287" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Search and Place the order of the products" name="Search Experience for home and Offers Page - Example #1.2" time="6.195">
+<testsuite name="Cucumber" time="37.975" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Search and Place the order of the products" name="Search Experience for home and Offers Page - Example #1.2" time="37.881">
 <system-out><![CDATA[
 Given User is on GreenCart Landing Page.....................................passed
 When User searched with shortname "Potato" and extracted actual name of the product.passed
@@ -8,7 +8,7 @@ And user searched for same shortname in offers page to check if product exist.pa
 Then validates same results are displayed at search results.................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search and Place the order of the products" name="Search Experience for home and Offers Page - Example #1.1" time="4.648">
+<testcase classname="Search and Place the order of the products" name="Search Experience for home and Offers Page - Example #1.1" time="36.541">
 <system-out><![CDATA[
 Given User is on GreenCart Landing Page.....................................passed
 When User searched with shortname "Tomato" and extracted actual name of the product.passed

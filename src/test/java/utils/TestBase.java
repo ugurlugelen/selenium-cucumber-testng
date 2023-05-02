@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -32,7 +33,7 @@ public class TestBase {
                     break;
 
                 case "edge":
-                    driver = new EdgeDriver();
+                    driver = new EdgeDriver(new EdgeOptions().addArguments("--headless=new"));
                     break;
 
                 case "firefox":
