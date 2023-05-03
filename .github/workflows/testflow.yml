@@ -5,8 +5,8 @@ jobs:
   run-tests:
     strategy:
       matrix:
-        browser: [chrome,edge]
-    runs-on: [self-hosted, adem-macos]
+        browser: [chrome]
+    runs-on: [self-hosted, adem mac-os]
     steps:
       - name: Checkout Git Repository
         uses: actions/checkout@v2
@@ -14,14 +14,15 @@ jobs:
         run: mvn compile
       - name: Run Selenium Cucumber Tests
         id: run-mvn-tests
-        run: mvn test -Dbrowser=${{ matrix.browser }}
+        run: mvn test -Dbrowser=${{ matrix.browser }} --fail-at-end
+        if: ${{ success() && steps.run-mvn-tests.exitcode == 0 }}
       - name: Upload Target Folder
         uses: actions/upload-artifact@v3
         with:
           name: target
           path: ${{ github.workspace }}/target
       - name: Test Report
-        if: failure() && steps.run-mvn-tests.outcome == 'failure'
+        if: success() || failure()
         uses: dorny/test-reporter@v1
         with:
           name: Test Results
