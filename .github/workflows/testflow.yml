@@ -17,6 +17,7 @@ jobs:
         run: mvn test -Dbrowser=${{ matrix.browser }}
         if: ${{ success() && steps.run-mvn-tests.exitcode == 0 }}
       - name: Upload Target Folder
+        if: success() || failure()
         uses: actions/upload-artifact@v3
         with:
           name: target
@@ -28,5 +29,6 @@ jobs:
           name: Test Results
           path: ${{ github.workspace }}/target/surefire-reports/TEST-cucumberOptions.TestNGTestRunner.xml
           reporter: java-junit
+          fail-on-error: 'false'
 
 
