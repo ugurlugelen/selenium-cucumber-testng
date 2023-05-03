@@ -14,7 +14,7 @@ jobs:
         run: mvn compile
       - name: Run Selenium Cucumber Tests
         id: run-mvn-tests
-        run: mvn test -Dbrowser=${{ matrix.browser }} --fail-at-end
+        run: mvn test -Dbrowser=${{ matrix.browser }}
         if: ${{ success() && steps.run-mvn-tests.exitcode == 0 }}
       - name: Upload Target Folder
         uses: actions/upload-artifact@v3
@@ -28,6 +28,5 @@ jobs:
           name: Test Results
           path: ${{ github.workspace }}/target/surefire-reports/TEST-cucumberOptions.TestNGTestRunner.xml
           reporter: java-junit
-          #java-version: 11
 
 

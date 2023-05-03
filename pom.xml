@@ -89,7 +89,7 @@
                     <includes>
                         <include>**/cucumberOptions/*TestNG*.java</include>
                     </includes>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <testFailureIgnore>false</testFailureIgnore>
                 </configuration>
             </plugin>
         </plugins>

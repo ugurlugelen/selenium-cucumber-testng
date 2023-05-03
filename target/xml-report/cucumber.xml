@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="37.975" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Search and Place the order of the products" name="Search Experience for home and Offers Page - Example #1.2" time="37.881">
+<testsuite name="Cucumber" time="14.455" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Search and Place the order of the products" name="Search Experience for home and Offers Page - Example #1.2" time="4.347">
 <system-out><![CDATA[
 Given User is on GreenCart Landing Page.....................................passed
 When User searched with shortname "Potato" and extracted actual name of the product.passed
@@ -8,12 +8,50 @@ And user searched for same shortname in offers page to check if product exist.pa
 Then validates same results are displayed at search results.................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search and Place the order of the products" name="Search Experience for home and Offers Page - Example #1.1" time="36.541">
+<testcase classname="Search and Place the order of the products" name="Search Experience for home and Offers Page - Example #1.1" time="14.362">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;h4.product-name&quot;}
+  (Session info: chrome=112.0.5615.137)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.3.1', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba632eded092262ea696038c97e2d5af, findElement {using=css selector, value=h4.product-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/75/w5hx54p12yd...}, goog:chromeOptions: {debuggerAddress: localhost:51779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51779/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba632eded092262ea696038c97e2d5af">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"h4.product-name"}
+  (Session info: chrome=112.0.5615.137)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.3.1', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba632eded092262ea696038c97e2d5af, findElement {using=css selector, value=h4.product-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/75/w5hx54p12yd...}, goog:chromeOptions: {debuggerAddress: localhost:51779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51779/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba632eded092262ea696038c97e2d5af
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.LandingPage.getProductName(LandingPage.java:28)
+	at stepDefinitions.LandingPageStepDefinitions.user_searched_with_shortname_and_extracted_actual_name_of_the_product(LandingPageStepDefinitions.java:25)
+	at ✽.User searched with shortname "kdfhgsd" and extracted actual name of the product(file:///Users/m2macbookair/IdeaProjects/CucumberFramework/src/test/java/features/searchProduct.feature:6)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on GreenCart Landing Page.....................................passed
-When User searched with shortname "Tomato" and extracted actual name of the product.passed
-And user searched for same shortname in offers page to check if product exist.passed
-Then validates same results are displayed at search results.................passed
+When User searched with shortname "kdfhgsd" and extracted actual name of the product.failed
+And user searched for same shortname in offers page to check if product exist.skipped
+Then validates same results are displayed at search results.................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

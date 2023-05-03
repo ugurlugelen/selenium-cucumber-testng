@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cucumberOptions.TestNGTestRunner" time="39.646" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cucumberOptions.TestNGTestRunner" time="16.189" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@11/11.0.17/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/m2macbookair/IdeaProjects/CucumberFramework/target/surefire/surefirebooter-20230502194129905_3.jar /Users/m2macbookair/IdeaProjects/CucumberFramework/target/surefire 2023-05-02T19-41-29_861-jvmRun1 surefire-20230502194129905_1tmp surefire_0-20230502194129905_2tmp"/>
+    <property name="sun.java.command" value="/Users/m2macbookair/IdeaProjects/CucumberFramework/target/surefire/surefirebooter-20230503123301480_3.jar /Users/m2macbookair/IdeaProjects/CucumberFramework/target/surefire 2023-05-03T12-33-01_433-jvmRun1 surefire-20230503123301480_1tmp surefire_0-20230503123301480_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|dns.google|*.dns.google|one.one.one.one|*.one.one.one.one"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/m2macbookair/IdeaProjects/CucumberFramework/target/test-classes:/Users/m2macbookair/IdeaProjects/CucumberFramework/target/classes:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/m2macbookair/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/m2macbookair/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/m2macbookair/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/m2macbookair/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/m2macbookair/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/m2macbookair/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/m2macbookair/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/m2macbookair/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/m2macbookair/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/m2macbookair/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/m2macbookair/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/m2macbookair/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/m2macbookair/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/m2macbookair/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/m2macbookair/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/m2macbookair/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/m2macbookair/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/m2macbookair/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/m2macbookair/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/m2macbookair/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/m2macbookair/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/m2macbookair/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/m2macbookair/.m2/repository/io/cucumber/cucumber-java/7.11.1/cucumber-java-7.11.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/cucumber-core/7.11.1/cucumber-core-7.11.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/cucumber-gherkin/7.11.1/cucumber-gherkin-7.11.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.11.1/cucumber-gherkin-messages-7.11.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/gherkin/26.0.3/gherkin-26.0.3.jar:/Users/m2macbookair/.m2/repository/io/cucumber/messages/21.0.1/messages-21.0.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/m2macbookair/.m2/repository/io/cucumber/datatable/7.11.1/datatable-7.11.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/cucumber-plugin/7.11.1/cucumber-plugin-7.11.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/docstring/7.11.1/docstring-7.11.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/html-formatter/20.2.1/html-formatter-20.2.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/junit-xml-formatter/0.1.0/junit-xml-formatter-0.1.0.jar:/Users/m2macbookair/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/m2macbookair/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/m2macbookair/.m2/repository/io/cucumber/cucumber-testng/7.11.1/cucumber-testng-7.11.1.jar:/Users/m2macbookair/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/m2macbookair/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/m2macbookair/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/m2macbookair/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/m2macbookair/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/m2macbookair/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/m2macbookair/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/m2macbookair/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/m2macbookair/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/m2macbookair/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/m2macbookair/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.7.0/extentreports-cucumber7-adapter-1.7.0.jar:/Users/m2macbookair/.m2/repository/tech/grasshopper/extent-pdf-report/2.7.0/extent-pdf-report-2.7.0.jar:/Users/m2macbookair/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.10.0/cucumber-pdf-report-2.10.0.jar:/Users/m2macbookair/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/m2macbookair/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/m2macbookair/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/m2macbookair/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/m2macbookair/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/m2macbookair/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/m2macbookair/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/m2macbookair/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/m2macbookair/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/m2macbookair/.m2/repository/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar:/Users/m2macbookair/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/m2macbookair/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/m2macbookair/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/m2macbookair/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/m2macbookair/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/m2macbookair/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/m2macbookair/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/m2macbookair/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/m2macbookair/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/m2macbookair/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/m2macbookair/.m2/repository/io/cucumber/cucumber-picocontainer/7.11.1/cucumber-picocontainer-7.11.1.jar:/Users/m2macbookair/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/m2macbookair/IdeaProjects/CucumberFramework/target/surefire/surefirebooter-20230502194129905_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/m2macbookair/IdeaProjects/CucumberFramework/target/surefire/surefirebooter-20230503123301480_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|dns.google|*.dns.google|one.one.one.one|*.one.one.one.one"/>
     <property name="java.runtime.version" value="11.0.17+0"/>
@@ -42,7 +42,6 @@
     <property name="os.version" value="13.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="browser" value="edge"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="java.vendor.version" value="Homebrew"/>
     <property name="localRepository" value="/Users/m2macbookair/.m2/repository"/>
@@ -62,46 +61,102 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|dns.google|*.dns.google|one.one.one.one|*.one.one.one.one"/>
   </properties>
-  <testcase name="runScenario[&quot;Search Experience for home and Offers Page&quot;, &quot;Search and Place the order of the products&quot;](1)" classname="cucumberOptions.TestNGTestRunner" time="36.602">
+  <testcase name="runScenario[&quot;Search Experience for home and Offers Page&quot;, &quot;Search and Place the order of the products&quot;](1)" classname="cucumberOptions.TestNGTestRunner" time="4.4">
     <system-out><![CDATA[
 @smoke
-Scenario Outline: Search Experience for home and Offers Page                          # src/test/java/features/searchProduct.feature:13
+Scenario Outline: Search Experience for home and Offers Page                           # src/test/java/features/searchProduct.feature:12
 
 @smoke
-Scenario Outline: Search Experience for home and Offers Page                          # src/test/java/features/searchProduct.feature:12
+Scenario Outline: Search Experience for home and Offers Page                          # src/test/java/features/searchProduct.feature:13
   Given User is on GreenCart Landing Page                                             # stepDefinitions.LandingPageStepDefinitions.user_is_on_green_cart_landing_page()
-  When User searched with shortname "Tomato" and extracted actual name of the product # stepDefinitions.LandingPageStepDefinitions.user_searched_with_shortname_and_extracted_actual_name_of_the_product(java.lang.String)
+  Given User is on GreenCart Landing Page                                              # stepDefinitions.LandingPageStepDefinitions.user_is_on_green_cart_landing_page()
+  When User searched with shortname "Potato" and extracted actual name of the product # stepDefinitions.LandingPageStepDefinitions.user_searched_with_shortname_and_extracted_actual_name_of_the_product(java.lang.String)
   And user searched for same shortname in offers page to check if product exist       # stepDefinitions.OfferPageStepDefinitions.user_searched_for_same_shortname_in_offers_page_to_check_if_product_exist()
   Then validates same results are displayed at search results                         # stepDefinitions.OfferPageStepDefinitions.validates_same_results_are_displayed_at_search_results()
-  Given User is on GreenCart Landing Page                                             # stepDefinitions.LandingPageStepDefinitions.user_is_on_green_cart_landing_page()
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-StarSttairntgi nMgi cMriocsroofsto fEt Eddge ge WWeebDrivber 112D.0.r1i7v2er 1122.0.1722..68 (862d34b82459d 3(c382d34b226405999d63cf9c3c2160f09f9b64f69981c6c31f04b00)f b4o698163n0 4pb0ort )24 3o7n por4t
- 3T4o3 s2
-ubTmit o sfubmit feedbacek, eredporbt aa cbugk,, o r rsueggpesot nrewt  fae abtuug,r eosr,  spluggeesats e nveiws ifte ahtttuprse:s/,/ gpiltehausbe. cvoims/Miit chrtotsposf:t/E/dggiet/hEudbge.WceobmD/rMiivcerro
-so
-fOtEndlgye/Edg eWebDrlivero
-
-Only lcocal connectionsal conn are alloweedct.io
-nPs alreae allosweed .s
-ePelease s eeh htttps:t//apks:a/./mask/a.Wms/eWebbDriDverSerivceurrSiectuyr iftoyr  fsourg gessuggestions on keepintgi oMnis corosonft E dgek WebeDriveer safe.
-
-ping Microsoft Edge WebDriver safe.
-
-MMicrosioftc Edrge WebDorivesr was ostfarted tsuc cEedsgsfulel yW.e
-bDriver was started successfully.
-May 02, 2023 7:42:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+SSttaarrttiinngg  CChhrroommeeDDrriivveerr  111111..00..5556536.36.46 4( c(7c1701e09e39d35db56b36b37b079059a5faef8ec82cc21c71d7fd3f43440480078483097d8-4r3e9fds-/rberfasnc/hb-rhaenacdhs-head/5563@{#99s5/}5)5 6o3n@ {p#o9r9t5 }4)7 on6 po1r7t
+ O3n3l1y2 3l
+oOcnally con nleocctailo ncso nanrectione alsl oawreed .a
+lPlloewaesde. 
+sPelee ahstet psse:e/ /hcthtrposm:e/d/rcihvreormed.rcihvreorm.icuhmr.oomrigu/ms.eocrugr/isteyc-urciotnys-icdoenrsideartaionst ifoonrs  sfuoggre susggetsitoinosn s ono keepn kieenpign gC ChromeDhriverro mseaDrivefr es.a
+fe.
+ChCromherDormievDerri vwears  wsatsa rstteadr tseudc cseuscsfcuelslsyf.u
+lly.
+[168310[6383.053][WARNING]:168 31063T83.h053i][WAsRNING ]: Tvhis eversirosion n oof ChfromeDri ver Chas nhot breen toested mwieth CDhrorme veirsiovn 112e.
+r has not been tested with Chrome version 112.
+May 03, 2023 12:33:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
-May 02, 2023 7:42:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 03, 2023 12:33:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Search Experience for home and Offers Page&quot;, &quot;Search and Place the order of the products&quot;](2)" classname="cucumberOptions.TestNGTestRunner" time="37.933">
-    <system-out><![CDATA[  When User searched with shortname "Potato" and extracted actual name of the product # stepDefinitions.LandingPageStepDefinitions.user_searched_with_shortname_and_extracted_actual_name_of_the_product(java.lang.String)
-  And user searched for same shortname in offers page to check if product exist       # stepDefinitions.OfferPageStepDefinitions.user_searched_for_same_shortname_in_offers_page_to_check_if_product_exist()
-  Then validates same results are displayed at search results                         # stepDefinitions.OfferPageStepDefinitions.validates_same_results_are_displayed_at_search_results()
+  <testcase name="runScenario[&quot;Search Experience for home and Offers Page&quot;, &quot;Search and Place the order of the products&quot;](2)" classname="cucumberOptions.TestNGTestRunner" time="14.414">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;h4.product-name&quot;}&#10;  (Session info: chrome=112.0.5615.137)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;11.0.17&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ba632eded092262ea696038c97e2d5af, findElement {using=css selector, value=h4.product-name}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/75/w5hx54p12yd...}, goog:chromeOptions: {debuggerAddress: localhost:51779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51779/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ba632eded092262ea696038c97e2d5af" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"h4.product-name"}
+  (Session info: chrome=112.0.5615.137)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.3.1', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba632eded092262ea696038c97e2d5af, findElement {using=css selector, value=h4.product-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/75/w5hx54p12yd...}, goog:chromeOptions: {debuggerAddress: localhost:51779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51779/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba632eded092262ea696038c97e2d5af
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.LandingPage.getProductName(LandingPage.java:28)
+	at stepDefinitions.LandingPageStepDefinitions.user_searched_with_shortname_and_extracted_actual_name_of_the_product(LandingPageStepDefinitions.java:25)
+	at ✽.User searched with shortname "kdfhgsd" and extracted actual name of the product(file:///Users/m2macbookair/IdeaProjects/CucumberFramework/src/test/java/features/searchProduct.feature:6)
+]]></failure>
+    <system-out><![CDATA[  When User searched with shortname "kdfhgsd" and extracted actual name of the product # stepDefinitions.LandingPageStepDefinitions.user_searched_with_shortname_and_extracted_actual_name_of_the_product(java.lang.String)
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"h4.product-name"}
+  (Session info: chrome=112.0.5615.137)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.3.1', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba632eded092262ea696038c97e2d5af, findElement {using=css selector, value=h4.product-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/75/w5hx54p12yd...}, goog:chromeOptions: {debuggerAddress: localhost:51779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51779/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba632eded092262ea696038c97e2d5af
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.LandingPage.getProductName(LandingPage.java:28)
+	at stepDefinitions.LandingPageStepDefinitions.user_searched_with_shortname_and_extracted_actual_name_of_the_product(LandingPageStepDefinitions.java:25)
+	at ✽.User searched with shortname "kdfhgsd" and extracted actual name of the product(file:///Users/m2macbookair/IdeaProjects/CucumberFramework/src/test/java/features/searchProduct.feature:6)
+
+
+    Embedding Search Experience for home and Offers Page [image/png 81463 bytes]
+
+  And user searched for same shortname in offers page to check if product exist        # stepDefinitions.OfferPageStepDefinitions.user_searched_for_same_shortname_in_offers_page_to_check_if_product_exist()
+  Then validates same results are displayed at search results                          # stepDefinitions.OfferPageStepDefinitions.validates_same_results_are_displayed_at_search_results()
 ]]></system-out>
   </testcase>
 </testsuite>
