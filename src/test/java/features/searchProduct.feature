@@ -9,6 +9,6 @@ Feature: Search and Place the order of the products
 
     Examples:
       | productName |
-      | Tomato      |
+      | kdfhgsd     |
       | Potato      |
 
