@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         browser: [chrome]
-    runs-on: [self-hosted, adem mac-os]
+    runs-on: [local-macos]
     steps:
       - name: Checkout Git Repository
         uses: actions/checkout@v2
