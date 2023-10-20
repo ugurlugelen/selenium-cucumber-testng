@@ -10,4 +10,4 @@ Feature: Place the order for product
 
     Examples:
       | productName|
-      | dsfhdfh   |
+      | cucumber   |
