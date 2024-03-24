@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
 
-        features = "target/failed_scenarios.txt",
+        features = "@target/failed_scenarios.txt",
         glue = "stepDefinitions",
         monochrome = true,
         publish = true,
@@ -21,7 +21,6 @@ import org.testng.annotations.DataProvider;
         }
         )
 public class FailedTestRunner extends AbstractTestNGCucumberTests {
-
     @DataProvider(parallel = true)
     @Override
     public Object[][] scenarios() {

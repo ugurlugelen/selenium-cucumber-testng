@@ -12,7 +12,7 @@ import org.testng.annotations.DataProvider;
         monochrome = true,
         publish = true,
         dryRun = false,
-        tags = "@wip",
+        tags = "@smoke",
         plugin = {
                 "pretty",
                 "html:target/html-reports/cucumber.html",

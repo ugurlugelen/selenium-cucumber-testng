@@ -1,9 +1,6 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import pages.LandingPage;
 import utils.TestContextSetUp;
 
@@ -26,6 +23,6 @@ public class LandingPageStepDefinitions {
         landingPage.searchItem(string);
         Thread.sleep(1000);
         testContextSetUp.productNameAtMainPage = landingPage.getProductName().split("-")[0].trim();
-        System.out.println("Denemelerceeeee" + testContextSetUp.productNameAtMainPage);
+        //System.out.println("Denemelerceeeee" + testContextSetUp.productNameAtMainPage);
     }
 }

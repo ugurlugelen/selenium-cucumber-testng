@@ -16,7 +16,7 @@ public class GenericUtils {
         this.driver = driver;
     }
 
-    public void swithWindowToChild(){
+    public void switchWindowToChild(){
         String mainPage = driver.getWindowHandle();
         for (String windowHandle : driver.getWindowHandles()) {
             if (!windowHandle.equals(mainPage)){

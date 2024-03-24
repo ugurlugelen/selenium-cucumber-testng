@@ -1,11 +1,17 @@
 package utils;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.Browser;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 
 public class TestBase {
@@ -23,18 +29,28 @@ public class TestBase {
             switch (browser.toLowerCase()){
 
                 case "chrome":
-                    WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(new ChromeOptions().addArguments("--headless=new"));
                     break;
 
                 case "edge":
-                    WebDriverManager.edgedriver().setup();
-                    driver = new EdgeDriver();
+                    driver = new EdgeDriver(new EdgeOptions().addArguments("--headless=new"));
                     break;
 
                 case "firefox":
-                    WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
+                    break;
+
+                case "remote-chrome":
+                    DesiredCapabilities capabilities = new DesiredCapabilities();
+                    capabilities.setBrowserName(Browser.CHROME.browserName());
+                    capabilities.setVersion("111");
+                    try {
+                        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
+                    } catch (MalformedURLException e) {
+                        throw new RuntimeException(e);
+                    }
+                default:
+                    driver = new ChromeDriver();
                     break;
             }
         }
