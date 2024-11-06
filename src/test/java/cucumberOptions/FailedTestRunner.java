@@ -25,5 +25,6 @@ public class FailedTestRunner extends AbstractTestNGCucumberTests {
     @Override
     public Object[][] scenarios() {
         return super.scenarios();
+
     }
 }
